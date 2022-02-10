@@ -15,6 +15,10 @@ body {
   background-color: #021629;
 }
 
+.custom-footer-bg {
+  background: linear-gradient(rgb(0, 0, 0), rgb(6, 46, 83));
+}
+
 .custom-mobile-navbar-color:hover {
   color: #23A6F0;
   cursor: pointer;
