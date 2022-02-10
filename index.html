@@ -110,7 +110,7 @@
         <!-- Banner Section -->
         <div class="flex w-full flex-col mt-10 items-center justif-center py-16 xl:px-0 px-4">
             <picture>
-                <img src="./assets/images/deal_banner.png" alt="deal_banner icon">
+                <img src="./assets/images/deal_banner.png" loading="lazy" alt="deal_banner icon">
             </picture>
 
             <h2 class="lg:text-sm w-80 light-gray pt-3 text-center lg:mb-0 mb-4">
@@ -136,7 +136,7 @@
             </div>
             <div class="flex justify-center items-center pt-24">
                 <picture>
-                    <img src="./assets/images/mock creative.png" class="w-96" alt="mock creative icon">
+                    <img src="./assets/images/mock creative.png" class="w-96"loading="lazy" alt="mock creative icon">
                 </picture>
                 
             </div>
@@ -193,7 +193,29 @@
         </footer>
         <!-- End of Protect the Community -->
     </div>
-    <div id="aboutUs" class="hidden">aboutUs</div>
+    <!-- About Us Section -->
+    <div id="aboutUs" class="hidden">
+        <!--About us Banner Section -->   
+        <section class="relative py-8 px-4">
+            <div class="z-20 relative text-white container mx-auto mt-32">
+                <h1 class="mb-4 lg:text-6xl text-center text-white tracking-1px font-bold">About Us</h1>
+                <p class="lg:text-sm w-96 text-white mt-12 lg:leading-7 flex justif-center mx-auto text-center lg:mb-0 mb-4">
+                    As a technology company, we hope to build a platform that
+                    is transparent enough to aid you make stringent decisions in
+                    your use of human resources.
+                </p>
+                <button
+                    class="flex items-center mx-auto focus:outline-none  mt-7 lg:mt-10 text-sm  font-medium text-white py-2 px-4  custom-mobile-nav-bg-color rounded-full">
+                    Contact Us
+                   
+                </button>
+            </div>
+            <div class="absolute inset-0 h-screen z-10">
+                <img src="./assets/images/aboutUs.png" class="h-full w-full object-fit-cover" alt="aboutUs icon">
+            </div>
+        </section>
+        <!--About us End of Banner section -->
+    </div>
     <div id="contactUs" class="hidden"> contactUs</div>
     <div id="terms" class="hidden"> terms</div>
     <div id="privacy" class="hidden">privacy</div>
