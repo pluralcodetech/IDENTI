@@ -1,0 +1,53 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-navbar-color {
+  color: #23A6F0;
+}
+.custom-mobile-navbar-color {
+  color: #EEEEEE;
+}
+
+.protect-community {
+  background-color: #021629;
+}
+
+.custom-mobile-navbar-color:hover {
+  color: #23A6F0;
+  cursor: pointer;
+}
+
+.custom-bg-color {
+    background-color: #252525;
+}
+.custom-mobile-nav-bg-color {
+    background: linear-gradient(rgb(35, 166, 240), rgb(2, 50, 78));
+}
+.custom-foreground-color {
+    color: #f56565;
+}
+.custom-border-bottom {
+    border-bottom: 2px solid #f56565;
+}
+
+/* ScrollBar */
+/* width */
+#scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+  
+ 
+   
+  /* Handle */
+  #scrollbar::-webkit-scrollbar-thumb {
+    background: #718096; 
+    border-radius: 10px;
+  };
+  
+  /* Handle on hover */
+  #scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #2d3748; 
+  }

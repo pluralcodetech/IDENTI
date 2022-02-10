@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Indenti</title>
+</head>
+<body>
+    <!-- Nav starts here -->
+    <div class="py-4 md:py-5 custom-bg-color">
+        <header class="mx-auto container px-4 xl:px-0">
+            <div class="w-full flex items-center justify-between md:px-20">
+                <a href="">
+                    <img class="w-20" src="./assets/images/logo.png" alt="logo" />
+                </a>
+
+                <div class="mx-auto px-4 xl:px-0">
+
+                    <ul class="hidden text-lg sm:flex items-center">
+                        <li onclick="toggleContent(this,1)" class="-mb-px mr-7 custom-navbar-color">Home</li>
+                        <li onclick="toggleContent(this,2)" class="-mb-px cursor-pointer  text-gray-600 mr-7">About Us</li>
+                        <li onclick="toggleContent(this,3)" class="-mb-px cursor-pointer  text-gray-600 mr-7">Contact Us</li>
+                        <li onclick="toggleContent(this,4)" class="-mb-px cursor-pointer  text-gray-600 mr-7">Terms</li>
+                        <li onclick="toggleContent(this,5)" class="-mb-px cursor-pointer  text-gray-600 ">Privacy</li>
+                    </ul>
+                    
+                </div>
+                <div class="px-4 xl:px-0 ">
+                
+                    <ul class="hidden text-lg sm:flex items-center">
+                        <li class="-mb-px  text-yellow-500 mr-3">
+                            <a href="">
+                                <img  src="./assets/images/instagram.png" alt="logo" />
+                            </a>
+                        </li>
+                        <li class="-mb-px  mr-3">
+                            <a href="">
+                                <img  src="./assets/images/twitter.png" alt="logo" />
+                            </a>
+                        </li>
+                        <li class="-mb-px  text-yellow-500 ">
+                            <a href="">
+                                <img class="w-20" src="./assets/images/nav-item.png" alt="logo" />
+                            </a>
+                        </li>
+
+                    </ul>
+                
+                </div>
+                <div class="sm:block  md:hidden lg:hidden">
+                    <div onclick="toggleMenu(true)"
+                        class="sm:block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </div>
+                    <div id="menu" class="md:block lg:block hidden">
+                        <div onclick="toggleMenu(false), toggleContent(this,1)"
+                            class="block md:hidden lg:hidden custom-mobile-navbar-color fixed z-30 top-0 pt-4">
+                            <svg aria-haspopup="true" aria-label="Main Menu" xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <ul
+                            class="flex md:flex text-3xl font-semibold md:text-base custom-mobile-nav-bg-color lg:text-base lg:flex flex-col md:flex-row lg:flex-row justify-center items-center fixed md:relative lg:relative top-0 bottom-0 left-0 right-0 z-20 .custom-bg-color">
+                            <li  onclick="toggleMenu(false), toggleContent(this,1)" class="md:hidden md:mr-8 lg:mr-10 flex items-center">
+                                <small class="custom-mobile-navbar-color pt-10 md:pt-0"
+                                    href="#">Home</small>
+                            </li>
+                            <li  onclick="toggleMenu(false), toggleContent(this,2)" class="md:hidden md:mr-8 lg:mr-10 flex items-center">
+                                <small class="custom-mobile-navbar-color pt-10 md:pt-0"
+                                    >About Us</small>
+                            </li>
+                            <li  onclick="toggleMenu(false), toggleContent(this,3)" class="md:hidden md:mr-8 lg:mr-10 flex items-center">
+                                <small class="custom-mobile-navbar-color pt-10 md:pt-0"
+                                    >Contact Us</small>
+                            </li>
+                            <li  onclick="toggleMenu(false), toggleContent(this,4)" class="md:hidden md:mr-8 lg:mr-10 flex items-center">
+                                <small class="custom-mobile-navbar-color pt-10 md:pt-0"
+                                    >Terms</small>
+                            </li>
+                            <li  onclick="toggleMenu(false), toggleContent(this,5)" class="md:hidden md:mr-8 lg:mr-10 flex items-center">
+                                <small class="custom-mobile-navbar-color pt-10 md:pt-0"
+                                    >Privacy</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    
+    <!-- Nav ends here -->
+
+    <div id="home">
+        <!-- Banner Section -->
+        <div class="flex w-full flex-col mt-10 items-center justif-center py-16 xl:px-0 px-4">
+            <picture>
+                <img src="./assets/images/deal_banner.png" alt="deal_banner icon">
+            </picture>
+
+            <h2 class="lg:text-sm w-80 light-gray pt-3 text-center lg:mb-0 mb-4">
+                If they are listed here, then DO NOT DEAL. 
+                They have a reputation of being UNREACHABLE</h2>
+            <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-3 md:mt-14 ">
+                <div class="relative w-full Search">
+                    <div class="lg:absolute w-32  custom-mobile-nav-bg-color rounded-r-full lg:border-r lg:border-t lg:border-b lg:mb-0 mb-4 lg:py-5 py-3 border-dark-gray cursor-pointer flex items-center justify-between pr-3 right-0 h-full z-30">
+                        <button class="mx-auto text-white">Search</button>
+                    </div>
+                    <div class="absolute inset-0 lg:mt-0 mt-8 w-16 dark-gray flex items-center pl-6 h-full lg:py-5 z-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <circle cx="11.6667" cy="11.6667" r="8.16667" stroke="#4A5568" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M24.5 24.5L17.5 17.5" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <input id="search"
+                        class="w-full text-light-gray rounded-full focus:outline-none focus:border font-normal pl-16 pr-24 lg:py-5 py-2 flex items-center text-2xl border-dark-gray rounded border relative z-10"
+                        placeholder="Search" />
+                </div>
+            </div>
+            <div class="flex justify-center items-center pt-24">
+                <picture>
+                    <img src="./assets/images/mock creative.png" class="w-96" alt="mock creative icon">
+                </picture>
+                
+            </div>
+        </div>
+        <!-- End of Banner section -->
+        <!-- Section Protect the Community -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 lg:pt-20 protect-community">
+            <div class="w-full custom-height bg-purple-light mt-8 lg:mt-0 rounded-3xl relative">
+                <div class="flex justify-center">
+                    <img loading="lazy" class="w-auto" src="./assets/images/protect_community.png" alt="cloud" />
+                </div>
+                
+            </div>
+            <div class="xl:mt-8">
+                <div class="text-3xl text-white tracking-1px font-extrabold">
+                    <h1 class="mt-2 lg:mt-0 md:w-96 leading-relaxed">Protect the community, Get help to reconnect using our APIs</h1>
+                </div>
+                <h2 class="text-sm tracking-wide leading-6 lg:w-72 mt-2 lg:mt-6 text-gray-100">
+                    Entered some deals with persons who are now unreachable or unavailable? Let’s help you reconnect with them using our
+                    powerful APIs
+                </h2>
+                <button
+                    class="flex items-center relative focus:outline-none justify-center mt-5 lg:mt-10 text-sm  font-medium text-white p-3  custom-mobile-nav-bg-color rounded-full">
+                    Get started
+                    <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="26" height="17" viewBox="0 0 26 17" fill="none">
+                        <path d="M1.33333 8.6665H24.6667" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M18 15.3332L24.6667 8.6665" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M18 2L24.6667 8.66667" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- End of Protect the Community -->
+    </div>
+    <div id="aboutUs" class="hidden">aboutUs</div>
+    <div id="contactUs" class="hidden"> contactUs</div>
+    <div id="terms" class="hidden"> terms</div>
+    <div id="privacy" class="hidden">privacy</div>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
