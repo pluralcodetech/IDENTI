@@ -195,9 +195,11 @@
     </div>
     <!-- About Us Section -->
     <div id="aboutUs" class="hidden">
-        <!--About us Banner Section -->   
-        <section class="relative py-8 px-4">
-            <div class="z-20 relative text-white container mx-auto mt-32">
+        <!--About us Banner Section -->  
+        <div class="min-h-screen relative">
+            <img src="./assets/images/aboutUs.png" class="absolute h-full object-cover object-center w-full" />
+           
+            <div class="mx-auto container lg:px-0 px-4 h-full relative pt-36">
                 <h1 class="mb-4 lg:text-6xl text-center text-white tracking-1px font-bold">About Us</h1>
                 <p class="lg:text-sm w-96 text-white mt-12 lg:leading-7 flex justif-center mx-auto text-center lg:mb-0 mb-4">
                     As a technology company, we hope to build a platform that
@@ -207,18 +209,124 @@
                 <button
                     class="flex items-center mx-auto focus:outline-none  mt-7 lg:mt-10 text-sm  font-medium text-white py-2 px-4  custom-mobile-nav-bg-color rounded-full">
                     Contact Us
-                   
+                
                 </button>
+                
             </div>
-            <div class="absolute inset-0 h-screen z-10">
-                <img src="./assets/images/aboutUs.png" class="h-full w-full object-fit-cover" alt="aboutUs icon">
-            </div>
-        </section>
+        </div>
+        
+        <div class="relative  py-32 px-4 " >
+           <article class="lg:px-60 leading-9">
+                <h1 class="">When people commit to a deal or contract but later become reputably unavailable or unreachable, it becomes a
+                    problem.
+                    Identi ensures that they do not enter new deals thereby protecting the community of reputable organisations.</h1>
+                <h1>Our search product is riding on several, multiple and diversified data sources.
+                    Feel free to use our Search product, but be sure to be acquainted with our Terms of use and Privacy policy.</h1>
+           </article>
+        </div>
         <!--About us End of Banner section -->
+
+        <!--Before you Employ  -->
+        <section class="">
+            <main id="beforeYouEmploy-card" class="grid grid-cols-1 md:grid-cols-3 gap-4 md:py-24 md:px-40 beforeYouEmploy"></main>
+        </section>
+
+        <footer class="w-full flex items-center py-5 justify-between md:px-20 custom-footer-bg">
+            <div class="flex w-40 justify-between items-center text-white">
+                <div>
+                    <h6>Terms</h6>
+                </div>
+                <div>
+                    <h6>Privacy</h6>
+                </div>
+            </div>
+            <ul class="text-lg flex items-center">
+                <li class="-mb-px  text-yellow-500 mr-5">
+                    <a href="">
+                        <img src="./assets/images/instagram.png" alt="instagram" />
+                    </a>
+                </li>
+                <li class="-mb-px  mr-3">
+                    <a href="">
+                        <img src="./assets/images/twitter.png" alt="twitter" />
+                    </a>
+                </li>
+        
+            </ul>
+        </footer>
     </div>
-    <div id="contactUs" class="hidden"> contactUs</div>
+    <div id="contactUs" class="hidden"> 
+        <div class="mt-4 lg:mt-6 lg:pb-32">
+            <div class="mx-auto container flex flex-wrap items-center 2xl:px-0 xl:px-10 px-4">
+                <div class="flex flex-wrap lg:items-center mx-auto container">
+                    <div class="w-full  lg:w-1/2 my-10 2xl:pr-24 2xl:pl-0 xl:pl-12 pl-0">
+                        <div class="w-full flex flex-col items-start 2xl:items-end xl:justify-start 2xl:justify-end">
+                            <h class="text-4xl md:text-3xl lg:text-5xl font-bold tracking-wider text-dark2">Contact Us</h>
+                            <div class="w-full md:w-8/12 mt-9">
+                                <p class="text-dark2 text-base md:text-base lg:leading-6 tracking-wider">You can reach us on our social media handles or 
+                                    fill the form to reach us via email on hi@identi.ng
+                                </p>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 pt-10 sm:pt-12 md:pt-10 lg:pl-24">
+                        <div class="flex flex-col items-start xl:justify-start 2xl:justify-end">
+                            <div class="w-full 2xl:w-8/12 mt-3">
+                                <div class="s">
+                                    <input class="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="text" placeholder="Full Name" />
+                                </div>
+                                <div class="mt-4 md:mt-3">
+                                    <input class="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="email" placeholder="Email Address" />
+                                </div>
+                                <div class="mt-4 md:mt-3">
+                                    <input class="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="text" placeholder="Phone Number" />
+                                </div>
+                                <div class="mt-4 md:mt-3">
+                                    <textarea class="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 resize-none hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black xl:h-40 py-5 pl-4 text-dark2" type="text" placeholder="Message..."></textarea>
+                                </div>
+                                <div class="mt-5">
+                                    <button class="py-3 w-11/12 lg:w-full xl:w-10/12  md:py-5 px-5 md:px-10 bg-dark text-white hover:opacity-90 ease-in duration-150 text-sm md:text-lg tracking-wider font-semibold custom-mobile-nav-bg-color">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="w-full flex items-center py-5 justify-between md:px-20 custom-footer-bg">
+            <div class="flex w-40 justify-between items-center text-white">
+                <div>
+                    <h6>Terms</h6>
+                </div>
+                <div>
+                    <h6>Privacy</h6>
+                </div>
+            </div>
+            <ul class="text-lg flex items-center">
+                <li class="-mb-px  text-yellow-500 mr-5">
+                    <a href="">
+                        <img src="./assets/images/instagram.png" alt="instagram" />
+                    </a>
+                </li>
+                <li class="-mb-px  mr-3">
+                    <a href="">
+                        <img src="./assets/images/twitter.png" alt="twitter" />
+                    </a>
+                </li>
+        
+            </ul>
+        </footer>
+    </div>
     <div id="terms" class="hidden"> terms</div>
     <div id="privacy" class="hidden">privacy</div>
+
+    
+    
+    <script src="./assets/scripts/data.js"></script>
+    <script src="./assets/scripts/beforeYouEmployCard.js"></script>
     <script src="./assets/scripts/script.js"></script>
+    
 </body>
 </html>

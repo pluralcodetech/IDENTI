@@ -15,6 +15,13 @@ body {
   background-color: #021629;
 }
 
+.beforeYouEmploy {
+  background: #eaf7ff;
+}
+.reUseBYECard {
+  border: 1px solid #23A6F0
+}
+
 .custom-footer-bg {
   background: linear-gradient(rgb(0, 0, 0), rgb(6, 46, 83));
 }
@@ -44,6 +51,12 @@ body {
   border-bottom: 2px solid #f56565;
 }
 
+.article-bg {
+  background: url("../images/bg_left.png") right bottom no-repeat,
+    url("../images/bg_right.png") left top repeat;
+  /* padding: 15px; */
+}
+
 /* ScrollBar */
 /* width */
 #scrollbar::-webkit-scrollbar {
@@ -61,20 +74,19 @@ body {
   background: #2d3748;
 }
 
-
 /*  */
 
 /* .object-fit-fill {
   object-fit: fill;
 }
-
-.object-fit-contain {
+*/
+/* .object-fit-contain {
   object-fit: contain;
-} */
+}  */
 
-.object-fit-cover {
+/* .object-fit-cover {
   object-fit: cover;
-}
+} */
 
 /* .object-fit-none {
   object-fit: none;
