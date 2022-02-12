@@ -16,7 +16,7 @@
     <!-- Nav starts here -->
     <div class="py-4 md:py-5 custom-bg-color">
         <header class="mx-auto container px-4 xl:px-0">
-            <div class="w-full flex items-center justify-between md:px-20">
+            <div class="w-full flex items-center justify-between lg:px-20">
                 <a href="">
                     <img class="w-20" src="./assets/images/logo.png" alt="logo" />
                 </a>
@@ -24,10 +24,10 @@
                 <div class="mx-auto px-4 xl:px-0">
 
                     <ul class="hidden text-lg sm:flex items-center">
-                        <li onclick="toggleContent(this,1)" class="-mb-px mr-7 custom-navbar-color">Home</li>
-                        <li onclick="toggleContent(this,2)" class="-mb-px cursor-pointer  text-gray-600 mr-7">About Us</li>
-                        <li onclick="toggleContent(this,3)" class="-mb-px cursor-pointer  text-gray-600 mr-7">Contact Us</li>
-                        <li onclick="toggleContent(this,4)" class="-mb-px cursor-pointer  text-gray-600 mr-7">Terms</li>
+                        <li onclick="toggleContent(this,1)" class="-mb-px  cursor-pointer mr-3 lg:mr-7 custom-navbar-color">Home</li>
+                        <li onclick="toggleContent(this,2)" class="-mb-px cursor-pointer  text-gray-600 mr-3 lg:mr-7">About Us</li>
+                        <li onclick="toggleContent(this,3)" class="-mb-px cursor-pointer  text-gray-600 mr-3 lg:mr-7">Contact Us</li>
+                        <li onclick="toggleContent(this,4)" class="-mb-px cursor-pointer  text-gray-600 mr-3 lg:mr-7">Terms</li>
                         <li onclick="toggleContent(this,5)" class="-mb-px cursor-pointer  text-gray-600 ">Privacy</li>
                     </ul>
                     
@@ -110,16 +110,16 @@
 
     <div id="home">
         <!-- Banner Section -->
-        <div class="flex w-full flex-col mt-10 items-center justif-center py-16 xl:px-0 px-4">
+        <div class="flex w-full flex-col mt-16 lg:mt-10 items-center justif-center py-16 xl:px-0 px-4">
             <picture>
                 <img src="./assets/images/deal_banner.png" loading="lazy" alt="deal_banner icon">
             </picture>
 
-            <h2 class="lg:text-sm w-80 light-gray pt-3 text-center lg:mb-0 mb-4">
+            <h2 class=" sm:w-80 light-gray mt-10 break-words  text-center leading-8 lg:leading-0 lg:mt-0 lg:mb-0 mb-4 lg:text-sm lg:pt-3">
                 If they are listed here, then DO NOT DEAL. 
                 They have a reputation of being UNREACHABLE</h2>
-            <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-3 md:mt-14 ">
-                <div class="relative w-full Search">
+            <!-- <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-3 md:mt-14 ">
+                <div class="relative w-full Search flex flex-row-reverse">
                     <div class="lg:absolute w-32  custom-mobile-nav-bg-color rounded-r-full lg:border-r lg:border-t lg:border-b lg:mb-0 mb-4 lg:py-5 py-3 border-dark-gray cursor-pointer flex items-center justify-between pr-3 right-0 h-full z-30">
                         <button class="mx-auto text-white">Search</button>
                     </div>
@@ -132,8 +132,26 @@
                         </svg>
                     </div>
                     <input id="search"
-                        class="w-full text-light-gray rounded-full focus:outline-none focus:border font-normal pl-16 pr-24 lg:py-5 py-2 flex items-center text-2xl border-dark-gray rounded border relative z-10"
+                        class="w-full text-light-gray rounded-full focus:outline-none focus:border font-normal pl-16 lg:pr-24 lg:py-5 py-2 flex items-center text-2xl border-dark-gray rounded border relative z-10"
                         placeholder="Search" />
+                </div>
+            </div> -->
+            <div class="flex flex-col w-full sm:w-1/2 md:ml-4 mt-9  md:mt-14 ">
+                <div class="w-full flex flex-row rounded-full items-center border border-r ">
+                    <div class="py-6 ml-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <circle cx="11.6667" cy="11.6667" r="8.16667" stroke="#4A5568" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M24.5 24.5L17.5 17.5" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <input id="search"
+                        class="py-6 ml-5 w-full text-light-gray focus:outline-none focus:border font-normal text-sm"
+                        placeholder="Search" />
+                    <div class="w-40  h-full py-7 rounded-r-full custom-mobile-nav-bg-color">
+                        <button class="w-full mx-auto text-white ">Search</button>
+                    </div>
                 </div>
             </div>
             <div class="flex justify-center items-center pt-24">
@@ -145,23 +163,23 @@
         </div>
         <!-- End of Banner section -->
         <!-- Section Protect the Community -->
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 lg:pt-20 protect-community">
+        <div class="grid px-4 pb-16 sm:items-center lg:items-start sm:grid-cols-1 md:grid-cols-2 lg:px-0 md:pb-0 lg:grid-cols-2 xl:grid-cols-2 lg:pt-20 protect-community">
             <div class="w-full custom-height bg-purple-light mt-8 lg:mt-0 rounded-3xl relative">
                 <div class="flex justify-center">
                     <img loading="lazy" class="w-auto" src="./assets/images/protect_community.png" alt="cloud" />
                 </div>
                 
             </div>
-            <div class="xl:mt-8">
+            <div class="mt-7 md:mt-0 sm:px-4 lg:px-0 xl:mt-8 ">
                 <div class="text-3xl text-white tracking-1px font-extrabold">
-                    <h1 class="mt-2 lg:mt-0 md:w-96 leading-relaxed">Protect the community, Get help to reconnect using our APIs</h1>
+                    <h1 class="mt-2 lg:mt-0 lg:w-96 leading-relaxed">Protect the community, Get help to reconnect using our APIs</h1>
                 </div>
-                <h2 class="text-sm tracking-wide leading-6 lg:w-72 mt-2 lg:mt-6 text-gray-100">
+                <h2 class="text-sm tracking-wide leading-6 lg:w-72 mt-4 lg:mt-6 text-gray-100">
                     Entered some deals with persons who are now unreachable or unavailable? Let’s help you reconnect with them using our
                     powerful APIs
                 </h2>
                 <button
-                    class="flex items-center relative focus:outline-none justify-center mt-5 lg:mt-10 text-sm  font-medium text-white p-3  custom-mobile-nav-bg-color rounded-full">
+                    class="flex items-center relative focus:outline-none justify-center mt-7 lg:mt-10 text-sm  font-medium text-white p-3  custom-mobile-nav-bg-color rounded-full">
                     Get started
                     <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="26" height="17" viewBox="0 0 26 17" fill="none">
                         <path d="M1.33333 8.6665H24.6667" stroke="white" stroke-width="2.5" stroke-linecap="round"
@@ -174,8 +192,8 @@
                 </button>
             </div>
         </div>
-        <footer class="w-full flex items-center py-5 justify-between md:px-20 custom-footer-bg">
-            <div class="flex w-40 justify-between items-center text-white">
+        <footer class="w-full flex items-center py-5 justify-between px-4 lg:px-20 custom-footer-bg">
+            <div class="flex w-32 md:w-40 justify-between items-center text-white">
                 <div><h6>Terms</h6></div>
                 <div><h6>Privacy</h6></div>
             </div>
@@ -195,6 +213,8 @@
         </footer>
         <!-- End of Protect the Community -->
     </div>
+
+
     <!-- About Us Section -->
     <div id="aboutUs" class="hidden">
         <!--About us Banner Section -->  
@@ -257,6 +277,7 @@
             </ul>
         </footer>
     </div>
+    <!-- Contact -->
     <div id="contactUs" class="hidden custom_contactUS_bg"> 
         <div class=" lg:pb-32">
             <div class="mx-auto container flex flex-wrap items-center 2xl:px-0 xl:px-10 px-4">
