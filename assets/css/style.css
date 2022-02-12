@@ -4,6 +4,16 @@ body {
   margin: 0;
 }
 
+
+/* Global */
+/* .siggnUpCard_bg {
+  background-size: cover;
+  background-position: 20px 30px;
+  background-position: center 50% 50%;
+  background-repeat: no-repeat;
+
+}  */
+
 .custom-navbar-color {
   color: #23a6f0;
 }
@@ -33,6 +43,13 @@ body {
   height: 20%;
 }
 
+
+.custom-aboutUs-article-bg {
+  background: url('../images/aboutUs_aritcle_bg.png') center center no-repeat;
+}
+
+
+
 .custom-mobile-navbar-color:hover {
   color: #23a6f0;
   cursor: pointer;
@@ -55,6 +72,19 @@ body {
   background: url("../images/bg_left.png") right bottom no-repeat,
     url("../images/bg_right.png") left top repeat;
   /* padding: 15px; */
+}
+
+.custom_contactUS_bg {
+  background: url('../images/contactus_bg.png');
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+/*  */
+.siggnUpCard_bg {
+  background: url('../images/signUp-card.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ScrollBar */

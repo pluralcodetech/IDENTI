@@ -1,3 +1,5 @@
+// (adsbygoogle = window.adsbygoogle || []).push({});
+
 //Hamburger and mobile menu
 function toggleMenu(flag) {
   let value = document.getElementById("menu");
