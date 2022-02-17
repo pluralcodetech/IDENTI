@@ -1,6 +1,3 @@
-// (adsbygoogle = window.adsbygoogle || []).push({});
-
-//Hamburger and mobile menu
 function toggleMenu(flag) {
   let value = document.getElementById("menu");
   if (flag) {
@@ -9,6 +6,8 @@ function toggleMenu(flag) {
     value.classList.add("hidden");
   }
 }
+
+
 // Tab handler starts
 toggleContent = (source, target) => {
   // let exploreContent = document.getElementById("explore"); //home
@@ -67,4 +66,21 @@ toggleContent = (source, target) => {
       break;
   }
 };
-// Tab handler ends
+
+
+// Country code api
+
+
+(async () => {
+  let response = await fetch(" http://country.io/phone.json"
+//   , {
+//     mode: 'no-cors',
+//     method: "get",
+//     headers: {
+//       "Content-Type": "application/json"
+//  },
+  // }
+  )
+  // let data = await response.json();
+  // console.log(data);
+})();
