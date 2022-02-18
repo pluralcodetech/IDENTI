@@ -22,17 +22,64 @@
                 <div class="mt-4 md:mt-3">
                     <input class="mt-3 text-base bg-white rounded-2xl w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="email" placeholder="Email Address" />
                 </div>
-                <div class="mt-4 md:mt-3">
-                    <input class="mt-3 text-base bg-white rounded-2xl w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="text" placeholder="Phone Number" />
+                <div class="mt-7 md:mt-6 mx-auto flex flex-row items-center text-base bg-white rounded-2xl w-11/12 lg:w-full xl:w-10/12  hover:border-indigo-600 focus:border-indigo-600 focus:outline-none ">
+                    <div class="relative w-5/12 sm:w-2/12 lg:w-3/12">
+                        <div class="pointer-events-none text-gray-600 absolute mt-3 ml-20 sm:ml-24 sm:mt-6 lg:mt-3   lg:ml-24  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon cursor-pointer icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <select class='country_code rounded-l-2xl appearance-none border-0  w-full py-3 px-3 sm:py-6 lg:py-3 text-gray-400 leading-tight focus:outline-none '>
+                          
+                        </select>
+                    </div>
+                    <input class="w-full ml-3 py-3 px-3 pl-4 rounded-r-2xl text-dark2 sm:py-6 lg:py-3 border-0 focus:outline-none" type="text" placeholder="Phone Number" />
                 </div>
+             
                 <div class="mt-4 md:mt-3">
                     <input class="mt-3 text-basebg-white rounded-2xl w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="text" placeholder="Buisness Name" />
                 </div>
-                <div class="mt-4 md:mt-3">
-                    <input class="mt-3 text-base bg-white rounded-2xl w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="text" placeholder="Business category" />
+                <div class="mt-7 md:mt-6 ">
+                    <div class="relative w-11/12 lg:w-full xl:w-10/12 mx-auto">
+                        <!-- <div class="pointer-events-none text-gray-600 absolute mt-3 ml-60 sm:mr-auto sm:mt-4  lg:mt-4 lg:ml-96 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon cursor-pointer icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div> -->
+                        <select class='country_code rounded-2xl appearance-none border-0  w-full py-3 px-3 sm:py-6 lg:py-4 text-gray-400 leading-tight focus:outline-none '>
+                            <option value="" selected disabled hidden>Business category</option>
+                            <option value="Bank" >Bank</option>
+                            <option value="Fintech" >Fintech</option>
+                            <option value="Cooperative" >Cooperative</option>
+                            <option value="Insurance" >Insurance</option>
+                            <option value="Telco" >Telco</option>
+                            <option value="Landlord" >Insurance</option>
+                            <option value="Employer" >Employer</option>
+                        </select>
+                    </div>
+                    <!-- <div class="sm:w-3/6">
+                        <label class="block text-gray-400 text-sm font-light mb-2">Arrival Airport</label>
+                        <div class="relative w-full">
+                            <div class="pointer-events-none text-gray-600 absolute mt-3 ml-56  lg:ml-80  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon cursor-pointer icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                                
+                            </div>
+                            <select
+                                class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-600'>
+                                <option value="" selected disabled hidden>Business category</option>
+                                    
+                            </select>
+                        </div>
+                    </div> -->
+                    <!-- <input class="mt-3 text-base bg-white rounded-2xl w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2" type="text" placeholder="Business category" /> -->
                 </div>
                 
-                <div class="mt-5 text-center">
+                <div class="mt-7 text-center">
                     <a href="./index.html">
                         <button class="py-3 w-11/12 lg:w-9/12 rounded-2xl md:py-5 px-5 md:px-10 bg-dark text-white hover:opacity-90 ease-in duration-150 text-sm md:text-lg tracking-wider font-semibold custom-mobile-nav-bg-color">Create Account</button>
                     </a>
@@ -42,5 +89,9 @@
             </div>
         </div>
     </div>
+
+    <script src="./assets/scripts/data.js"></script>
+    <script src="./assets/scripts/signUp.js"></script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
