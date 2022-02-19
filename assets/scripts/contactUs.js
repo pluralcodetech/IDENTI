@@ -5,8 +5,6 @@ countryCodeJson.map((item, index) => console.log(Object.keys(item).toString(), O
 // console.log(Object.keys(countryCodeJson));
 
 
-
-
 const options = (docArea, index, value) => {
     docArea.innerHTML += `
         <option key="${index}" value="${Object.values(value).toString()}"> ${Object.keys(value).toString()} ${Object.values(value).toString()}</option>

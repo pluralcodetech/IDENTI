@@ -72,7 +72,7 @@ toggleContent = (source, target) => {
 
 
 (async () => {
-  let response = await fetch(" http://country.io/phone.json"
+  // let response = await fetch(" http://country.io/phone.json"
 //   , {
 //     mode: 'no-cors',
 //     method: "get",
@@ -80,7 +80,7 @@ toggleContent = (source, target) => {
 //       "Content-Type": "application/json"
 //  },
   // }
-  )
+  // )
   // let data = await response.json();
   // console.log(data);
 })();

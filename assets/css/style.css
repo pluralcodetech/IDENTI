@@ -8,13 +8,6 @@ body {
 
 
 /* Global */
-/* .siggnUpCard_bg {
-  background-size: cover;
-  background-position: 20px 30px;
-  background-position: center 50% 50%;
-  background-repeat: no-repeat;
-
-}  */
 
 .custom-navbar-color {
   color: #23a6f0;
@@ -98,6 +91,17 @@ body {
   background: url('../images/signUp-card.png') ;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/* policy */
+.policy_text:hover {
+  color: #23a6f0;
+}
+
+.policy-navbar-color {
+  color: #23a6f0;
+  border-bottom: 2px solid rgb(35, 166, 240);
 }
 
 /* ScrollBar */
