@@ -1,5 +1,3 @@
-
-
 toggleContent = (source, target) => {
     let termsContent = document.getElementById("terms"); //terms
     let privacyContent = document.getElementById("privacy"); //terms
@@ -15,15 +13,17 @@ toggleContent = (source, target) => {
     source.classList.add("policy-navbar-color", );
     switch (target) {
       case 1:
-        privacyContent.classList.remove("hidden");
-        termsContent.classList.add("hidden");
-        nav_list.classList.add("policy-navbar-color");
-        nav_list_1.classList.remove("policy-navbar-color");
-        break;
-      case 2:
-        privacyContent.classList.add("hidden");
         termsContent.classList.remove("hidden");
+        privacyContent.classList.add("hidden");
         
         break;
+      case 2:
+        
+        termsContent.classList.add("hidden");
+        privacyContent.classList.remove("hidden");
+        nav_list.classList.remove("policy-navbar-color");
+        nav_list_1.classList.add("policy-navbar-color");
+        break;
+      
     }
   };

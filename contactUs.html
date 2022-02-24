@@ -134,9 +134,12 @@
                         <div class="w-full flex flex-col items-start 2xl:items-end xl:justify-start 2xl:justify-end">
                             <h class="text-4xl  md:text-7xl font-bold tracking-wider text-white  lg:mt-24 ">Contact Us</h>
                             <div class="w-full md:w-3/5  mt-14 lg:mt-14">
-                                <p class="text-gray-100 text-base md:text-base lg:leading-9 tracking-wider">You can reach us on our social media handles or 
-                                    fill the form to reach us via email on hi@identi.ng
-                                </p>
+                                <!-- <a href="mailto:hi@identi.ng"> -->
+                                    <p class="text-gray-100 text-base md:text-base lg:leading-9 tracking-wider">You can reach us on our social media handles or 
+                                        fill the form to reach us via email on <a href="mailto:hi@identi.ng">hi@identi.ng</a>
+                                    </p>
+                                <!-- </a> -->
+                                
                                 <div class="mt-10">
                                     <img src="./assets/images/line.png" alt="" srcset="">
                                     <ul class="text-lg flex items-center mt-6">
@@ -158,13 +161,16 @@
                     </div>
                     <div class="w-full px-4   py-10 sm:pt-12 mb-10  md:pt-0 md:mt-20 lg:px-10 lg:py-10 lg:w-2/5  lg:rounded-3xl form_bg">
                         <div class="flex flex-col items-start xl:justify-start 2xl:justify-end">
-                            <div class="w-full 2xl:w-8/12 mt-3">
+                            <form class="w-full 2xl:w-8/12 mt-3">
                                 <div class="">
-                                    <input class="mt-3 text-base bg-white rounded-2xl  w-full  lg:w-full    hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2 sm:py-6 lg:py-3" type="text" placeholder="Full Name" />
+                                    <input id="full_name" class="mt-3 text-base bg-white rounded-2xl  w-full  lg:w-full    hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2 sm:py-6 lg:py-3" type="text" placeholder="Full Name" />
                                 </div>
                                 <div class="mt-4 md:mt-3">
-                                    <input class="mt-3 text-base bg-white rounded-2xl  w-full  hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2 sm:py-6 lg:py-3" type="email" placeholder="Email Address" />
+                                    <input id="email" class="mt-3 text-base bg-white rounded-2xl  w-full  hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2 sm:py-6 lg:py-3" type="email" placeholder="Email Address" />
                                 </div>
+                                <!-- <div class="mt-4 md:mt-3">
+                                    <input class="mt-3 text-base bg-white rounded-2xl  w-full  hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-3 pl-4 text-dark2 sm:py-6 lg:py-3" type="number" placeholder="Phone Number" />
+                                </div> -->
                                 <div class="mt-7 md:mt-6 flex flex-row items-center text-base bg-white rounded-2xl w-full hover:border-indigo-600 focus:border-indigo-600 focus:outline-none ">
                                     <div class="relative w-5/12 sm:w-2/12 lg:w-5/12">
                                         <div class="pointer-events-none text-gray-600 absolute mt-3 ml-20 sm:ml-24 sm:mt-6 lg:mt-3   lg:ml-24  ">
@@ -173,19 +179,19 @@
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </div>
-                                        <select class='country_code rounded-l-2xl appearance-none border-0  w-full py-3 px-3 sm:py-6 lg:py-3 text-gray-400 leading-tight focus:outline-none '>
-                                          
+                                        <select id="countryCode" class='country_code rounded-l-2xl appearance-none border-0  w-full py-3 px-3 sm:py-6 lg:py-3 text-gray-400 leading-tight focus:outline-none '>
+                                            <option value="" disabled selected>NG 234</option>
                                         </select>
                                     </div>
-                                    <input class="w-full ml-3 py-3 px-3 pl-4 rounded-r-2xl text-dark2 sm:py-6 lg:py-3 border-0 focus:outline-none" type="text" placeholder="Phone Number" />
+                                    <input id="phone_number" class="w-full ml-3 py-3 px-3 pl-4 rounded-r-2xl text-dark2 sm:py-6 lg:py-3 border-0 focus:outline-none" type="number" placeholder="Phone Number" />
                                 </div>
                                 <div class="mt-4 md:mt-3">
-                                    <textarea class="mt-3 text-base bg-white rounded-2xl w-full  resize-none hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black xl:h-40 py-5 pl-4 text-dark2 sm:py-6 lg:py-3" type="text" placeholder="Message..."></textarea>
+                                    <textarea id="message" class="mt-3 text-base bg-white rounded-2xl w-full  resize-none hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black xl:h-40 py-5 pl-4 text-dark2 sm:py-6 lg:py-3" type="text" placeholder="Message..."></textarea>
                                 </div>
                                 <div class="mt-10 sm:mt-10 ">
-                                    <button class="py-3 w-full rounded-2xl  md:py-5 px-5 md:px-10 bg-dark text-white hover:opacity-90 ease-in duration-150 text-sm md:text-lg tracking-wider font-semibold custom-mobile-nav-bg-color">Submit</button>
+                                    <button id="submit_btn" type="button" class="py-3 w-full rounded-2xl  md:py-5 px-5 md:px-10 bg-dark text-white hover:opacity-90 ease-in duration-150 text-sm md:text-lg tracking-wider font-semibold custom-mobile-nav-bg-color">Submit</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

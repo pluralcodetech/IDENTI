@@ -6,9 +6,11 @@ const { countryCodeJson } = dataFile;
 
 const options = (docArea, index, value) => {
     docArea.innerHTML += `
-        <option key="${index}" value="${Object.values(value).toString()}"> ${Object.keys(value).toString()} ${Object.values(value).toString()}</option>
+       <option key="${index}" value="${value}"> ${index} ${value}</option>
     `;
-}
+};
 
-countryCodeJson && countryCodeJson.map((item, index) => options(country_code, index, item));
-countryCodeJson && countryCodeJson.map((item, index) => options(country_code2, index, item));
+for(let char in countryCodeJson){
+    options(country_code, char, countryCodeJson[char])
+    options(country_code2, char, countryCodeJson[char])
+}

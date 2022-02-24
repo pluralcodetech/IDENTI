@@ -101,8 +101,11 @@ body {
 
 .policy-navbar-color {
   color: #23a6f0;
+  cursor: pointer;
   border-bottom: 2px solid rgb(35, 166, 240);
 }
+
+
 
 /* ScrollBar */
 /* width */

@@ -126,16 +126,121 @@
     </div>
     <!-- Nav ends here -->
     <ul class=" pl-3 lg:mt-14 text-sm  lg:ml-16 lg:text-lg mt-4 flex items-center">
-        <li onclick="toggleContent(this,1)" class="-mb-px  cursor-pointer pb-3 mr-5 lg:mr-3 lg:mr-10 policy-navbar-color">Terms of Service</li>
-        <li onclick="toggleContent(this,2)" class="-mb-px cursor-pointer pb-3  text-gray-600 mr-3 lg:mr-7">Privacy Policy</li>
+        <li id="nav_list" onclick="toggleContent(this,1)" class="-mb-px cursor-pointer pb-3  text-gray-600 mr-3 lg:mr-7 policy-navbar-color">Privacy Policy</li>
+        <li id="nav_list_1" onclick="toggleContent(this,2)" class="-mb-px  cursor-pointer pb-3 mr-5 lg:mr-3 lg:mr-10 ">Terms of Service</li>  
     </ul>
 
 
-    <!-- Main page -->
+        <!-- Main page -->
+
+        <!-- Privacy Policy Section -->
+        <div id="privacy" class=" border-0 border-t-2 border-gray-300 ">
+         
+            <div class="flex px-3 lg:px-0">
+                <div class="hidden w-6/12 border-0 border-r-2 lg:pt-14 lg:pl-20 lg:pr-40 border-gray-200 lg:block">
+                    <article class="leading-10  text-sm">
+                        <span class="cursor-pointer policy_text"><a href="#identi_collects"><h6> Information Identi Collects </h6></a></span>
+                        <span class="cursor-pointer policy_text"><a href="#information_organizations"><h6 class="ml-6"> Information Organizations Provide </h6></a></span>
+                        <span class="cursor-pointer policy_text"><a href="#information_users_provide"><h6 class="ml-6"> Information Users Provide </h6></a></span>
+                        <span class="cursor-pointer policy_text"><a href="#why_identi_collects"><h6 class="ml-6"> Why Identi Collects Information</h6></a></a></span>
+                        <span class="cursor-pointer policy_text"><a href="#delete_your_information"><h6 class=""> How You Can Delete Your Information</h6></a></span>  
+                    </article>
+                </div>
+                <div class="w-full lg:w-11/12 pt-8 text-sm lg:px-9 pb-10">
+                    <article class="spacing-y-32">
+                        <div class="leading-7">
+                            <p class="">This Privacy Policy is meant to help you understand 
+                                what information we collect, why we collect it and how you can 
+                                delete your information.
+                            </p>
+                        </div>
+                        
+                        <div class="leading-6 mt-14">
+                            <h5 class="font-bold text-lg" id="identi_collects">Information Identi Collects</h5>
+                            <p class="mt-3">Our search product rides on several, multiple and diversified data sources. Identi does not usually collect user information directly.</p>
+                            
+                        </div>
+                        
+                        
+                        <div class="leading-6 mt-3" id="information_organizations">
+                            <ul class="ml-6">
+                                <li class="list-disc">Information Organizations Provide</li>
+                            </ul>
+                            <p class="mt-3">User information including name, email, phone number, Bank Verification Number (BVN), and picture are provided by third-party organizations who’s Privacy Policies, we believe, allow for such. </p>
+                        </div>
+    
+                        <div class="leading-6 mt-3" id="information_users_provide">
+                            <ul class="ml-6">
+                                <li class="list-disc">Information Users Provide</li>
+                            </ul>
+                            <p class="mt-3">Sometimes users may want to dispute a search result and as such reconnect with the organization that enlisted them on our directories. When this happens, the user provides additional personal information including his primary and secondary phone numbers. This information is shared directly with the organization(s) that blacklisted the user. </p>
+                        </div>
+    
+                        
+                        <div class="leading-6 mt-6">
+                            <h5 class="font-bold text-lg" id="why_identi_collects">Why Identi Collects Information</h5>
+                            <p class="mt-3">As a public directory, we collect information to enable the community 
+                                become aware of individuals or organizations that are reputable or 
+                                notorious for being unavailable or unreachable after 
+                                entering into deals. This information, we believe, 
+                                will help them to decide whether to enter new deals 
+                                with the user and also help the user to get whitelisted.
+                            </p>
+                            <!-- <p class="mt-3">
+                            </p> -->
+                        </div>
+    
+                        <div class="leading-6 mt-6" id="delete_your_information">
+                            <h5 class="font-bold text-lg">How You Can Delete Your Information</h5>
+                            <p class="mt-3">We have provided a Dispute action to enable blacklisted users on the journey of deleting their information from our directory. Using the Dispute action reconnects them with all the organizations that blacklisted them. Follow these steps to delete your information on Identi:
+                                Search for your information here.
+                            </p>
+                            <p class="mt-3">
+                                If your name is listed, click the Dispute button to initiate a dispute. A link will be sent to your email address.
+                                Go to your email, tap on the link. You will be redirected to a form to provide information that will be used to reconnect you to the organizations that blacklisted you.
+                                Upon submitting the form, the organizations will be notified of your intentions to reconnect and will get across to you.
+                                The organizations will whitelist you once their qualm with you has been settled.
+                            </p>
+                            <p class="mt-3">
+                                If you have taken these steps but have not been whitelisted, 
+                                please feel free to contact us. 
+                            </p>
+                        </div>
+    
+                        <!-- <h1 class="mt-4 sm:mt-0">Our search product is riding on several, multiple and diversified data sources.
+                            Feel free to use our Search product, but be sure to be acquainted with our <span class="custom-navbar-color"><a href="#">Terms of use</a></span> and <span class="custom-navbar-color"><a href="#">Privacy policy</a></span>.</h1> -->
+                   </article>
+                </div>
+            </div>
+    
+    
+        
+    
+            <footer class="w-full flex items-center py-5 justify-between px-4 lg:px-20 custom-footer-bg">
+                <div class="flex w-32 text-sm md:w-40 justify-between items-center text-white">
+                    <div><h6>Terms</h6></div>
+                    <div><h6>Privacy</h6></div>
+                </div>
+                <ul class="text-lg flex items-center">
+                    <li class="-mb-px  text-yellow-500 mr-5">
+                        <a href="">
+                            <img src="./assets/images/instagram.png" class="w-5 sm:auto" alt="instagram" />
+                        </a>
+                    </li>
+                    <li class="-mb-px  mr-3">
+                        <a href="">
+                            <img src="./assets/images/twitter.png" class="w-5 sm:auto" alt="twitter" />
+                        </a>
+                    </li>
+                
+                </ul>
+            </footer> 
+        </div>
+
+
     <!-- Terms -->
 
-    <div id="terms" class="border border-2 border-gray-300 ">
-     
+    <div id="terms" class="hidden border-0 border-t-2 border-gray-300 ">
         <div class="flex px-3 lg:px-0">
             <div class="hidden w-6/12 border-0 border-r-2 lg:pt-14 lg:pl-20 lg:pr-40 border-gray-200 lg:block">
                 <article class="leading-10  text-sm">
@@ -185,7 +290,7 @@
                     </div>
 
                     <div class="leading-6 mt-3">
-                        <p>Besides these terms, we also publish a <span class="custom-navbar-color"><a href="#">Privacy Policy</a></span> . 
+                        <p>Besides these terms, we also publish a <span class="custom-navbar-color cursor-pointer" onclick="toggleContent(this,1)">Privacy Policy</span> . 
                             Although it’s not part of these terms, we encourage you 
                             to read it to better understand how you can delete your information.
                         </p>
@@ -307,109 +412,7 @@
     </div>
 
 
-    <!-- Privacy Policy Section -->
-    <div id="privacy" class="hidden border border-2 border-gray-300 pt-8">
-         
-        <div class="flex">
-            <div class="hidden w-6/12 border-0 border-r-2 lg:pt-14 lg:pl-20 lg:pr-40 border-gray-200 lg:block">
-                <article class="leading-10  text-sm">
-                    <span class="cursor-pointer policy_text"><a href="#identi_collects"><h6> Information Identi Collects </h6></a></span>
-                    <span class="cursor-pointer policy_text"><a href="#information_organizations"><h6 class="ml-6"> Information Organizations Provide </h6></a></span>
-                    <span class="cursor-pointer policy_text"><a href="#information_users_provide"><h6 class="ml-6"> Information Users Provide </h6></a></span>
-                    <span class="cursor-pointer policy_text"><a href="#why_identi_collects"><h6 class="ml-6"> Why Identi Collects Information</h6></a></a></span>
-                    <span class="cursor-pointer policy_text"><a href="#delete_your_information"><h6 class=""> How You Can Delete Your Information</h6></a></span>  
-                </article>
-            </div>
-            <div class="w-11/12 lg:pt-8 text-sm lg:px-9 pb-10">
-                <article class="spacing-y-32">
-                    <div class="leading-7">
-                        <p class="">This Privacy Policy is meant to help you understand 
-                            what information we collect, why we collect it and how you can 
-                            delete your information.
-                        </p>
-                    </div>
-                    
-                    <div class="leading-6 mt-14">
-                        <h5 class="font-bold text-lg" id="identi_collects">Information Identi Collects</h5>
-                        <p class="mt-3">Our search product rides on several, multiple and diversified data sources. Identi does not usually collect user information directly.</p>
-                        
-                    </div>
-                    
-                    
-                    <div class="leading-6 mt-3" id="information_organizations">
-                        <ul class="ml-6">
-                            <li class="list-disc">Information Organizations Provide</li>
-                        </ul>
-                        <p class="mt-3">User information including name, email, phone number, Bank Verification Number (BVN), and picture are provided by third-party organizations who’s Privacy Policies, we believe, allow for such. </p>
-                    </div>
 
-                    <div class="leading-6 mt-3" id="information_users_provide">
-                        <ul class="ml-6">
-                            <li class="list-disc">Information Users Provide</li>
-                        </ul>
-                        <p class="mt-3">Sometimes users may want to dispute a search result and as such reconnect with the organization that enlisted them on our directories. When this happens, the user provides additional personal information including his primary and secondary phone numbers. This information is shared directly with the organization(s) that blacklisted the user. </p>
-                    </div>
-
-                    
-                    <div class="leading-6 mt-6">
-                        <h5 class="font-bold text-lg" id="why_identi_collects">Why Identi Collects Information</h5>
-                        <p class="mt-3">As a public directory, we collect information to enable the community 
-                            become aware of individuals or organizations that are reputable or 
-                            notorious for being unavailable or unreachable after 
-                            entering into deals. This information, we believe, 
-                            will help them to decide whether to enter new deals 
-                            with the user and also help the user to get whitelisted.
-                        </p>
-                        <!-- <p class="mt-3">
-                        </p> -->
-                    </div>
-
-                    <div class="leading-6 mt-6" id="delete_your_information">
-                        <h5 class="font-bold text-lg">How You Can Delete Your Information</h5>
-                        <p class="mt-3">We have provided a Dispute action to enable blacklisted users on the journey of deleting their information from our directory. Using the Dispute action reconnects them with all the organizations that blacklisted them. Follow these steps to delete your information on Identi:
-                            Search for your information here.
-                        </p>
-                        <p class="mt-3">
-                            If your name is listed, click the Dispute button to initiate a dispute. A link will be sent to your email address.
-                            Go to your email, tap on the link. You will be redirected to a form to provide information that will be used to reconnect you to the organizations that blacklisted you.
-                            Upon submitting the form, the organizations will be notified of your intentions to reconnect and will get across to you.
-                            The organizations will whitelist you once their qualm with you has been settled.
-                        </p>
-                        <p class="mt-3">
-                            If you have taken these steps but have not been whitelisted, 
-                            please feel free to contact us. 
-                        </p>
-                    </div>
-
-                    <!-- <h1 class="mt-4 sm:mt-0">Our search product is riding on several, multiple and diversified data sources.
-                        Feel free to use our Search product, but be sure to be acquainted with our <span class="custom-navbar-color"><a href="#">Terms of use</a></span> and <span class="custom-navbar-color"><a href="#">Privacy policy</a></span>.</h1> -->
-               </article>
-            </div>
-        </div>
-
-
-    
-
-        <footer class="w-full flex items-center py-5 justify-between px-4 lg:px-20 custom-footer-bg">
-            <div class="flex w-32 text-sm md:w-40 justify-between items-center text-white">
-                <div><h6>Terms</h6></div>
-                <div><h6>Privacy</h6></div>
-            </div>
-            <ul class="text-lg flex items-center">
-                <li class="-mb-px  text-yellow-500 mr-5">
-                    <a href="">
-                        <img src="./assets/images/instagram.png" class="w-5 sm:auto" alt="instagram" />
-                    </a>
-                </li>
-                <li class="-mb-px  mr-3">
-                    <a href="">
-                        <img src="./assets/images/twitter.png" class="w-5 sm:auto" alt="twitter" />
-                    </a>
-                </li>
-            
-            </ul>
-        </footer> 
-    </div>
 
             
             
@@ -421,6 +424,6 @@
 
     <script src="./assets/scripts/data.js"></script>
     <script src="./assets/scripts/privacy.js"></script>
-
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
